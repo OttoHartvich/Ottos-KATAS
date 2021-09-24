@@ -1,0 +1,28 @@
+6 kyu
+Equal Sides Of An Array
+JavaScript:
+
+
+
+function findEvenIndex(arr)
+{
+  const sum = arr.reduce(function(a, b){ 
+    return a + b; 
+  },0);
+  
+  let index = -1;
+  
+  arr.reduce(function(a, b, i){
+    if (a == (sum - b)/2){
+      index = i;    
+    }
+    else {
+      return a + b;
+    }
+  },0)
+ return index;
+ 
+    
+
+  //Code goes here!
+}

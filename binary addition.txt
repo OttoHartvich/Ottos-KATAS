@@ -1,0 +1,5 @@
+function addBinary(a,b) {
+  var c = a + b;
+  return parseInt(c).toString(2);
+
+}

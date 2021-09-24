@@ -1,0 +1,10 @@
+7 kyu
+Sum of two lowest positive integers
+JavaScript:
+function sumTwoSmallestNumbers(numbers) {  
+
+  var min = Math.min.apply(null, numbers); 
+  numbers.splice(numbers.indexOf(min), 1);
+  var min2 = Math.min.apply(null, numbers);
+  return min+min2;
+}

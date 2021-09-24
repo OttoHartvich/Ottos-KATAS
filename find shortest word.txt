@@ -1,0 +1,14 @@
+7 kyu
+Shortest Word
+JavaScript:
+function findShort(s){
+  const arr = s.split(" ");
+  let len = arr[0].length;
+  for (i in arr) {
+    if (len > arr[i].length) {
+      len = arr[i].length;
+    }
+  }
+  return len;
+  
+}

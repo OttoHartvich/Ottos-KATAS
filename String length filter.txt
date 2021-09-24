@@ -1,0 +1,9 @@
+function friend(friends){
+  //your code here
+  var friendList = friends.filter(word => word.length == 4);
+  
+  return friendList;
+  console.log(i);
+ // more statements
+
+}
